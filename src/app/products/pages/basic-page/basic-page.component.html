@@ -26,4 +26,53 @@
             {{ nameTitle | titlecase }}
         </p-card>
     </div>
+    <div class="col-12 md:col-6">
+        <p-card header="date">
+            Casos de uso
+            <hr>
+            <ul>
+                <li>fecha</li>
+                <li>fecha | date</li>
+                <li>fecha | date: 'short'</li>
+                <li>fecha | date: 'long'</li>
+                <li>fecha | date: 'MMMM'</li>
+                <li>fecha | date: 'MMMM dd yyyy'</li>
+            </ul>
+            <hr>
+            Zonas Horarias:
+            <hr>
+            <ul>
+                <li>fecha | date: 'long':'GMT-6'</li>
+                <li>fecha | date: 'long':'GMT-4'</li>
+                <li>fecha | date: 'long':'GMT-4':'es-MX'</li>
+                <li>fecha | date: 'long':'GMT-4':'en-US'</li>
+                <li>fecha | date: 'long':'GMT-4':'fr-CA'</li>
+            </ul>
+        </p-card>
+    </div>
+    <div class="col-12 md:col-6">
+        <p-card header="date">
+            Implementado:
+            <hr>
+            <ul>
+                <li>{{customDate}}</li>
+                <li>{{ customDate | date }}</li>
+                <li>{{ customDate | date: 'short' }}</li>
+                <li>{{ customDate | date: 'long' }}</li>
+                <li>{{ customDate | date: 'MMMM' }}</li>
+                <li>{{ customDate | date: 'MMMM dd, yyyy' }}</li>
+            </ul>
+            <hr>
+            Zonas Horarias:
+            <hr>
+            <ul>
+                <li>{{customDate | date: 'long':'GMT-6'}}</li>
+                <li>{{customDate | date: 'long':'GMT-4'}}</li>
+                <li>{{customDate | date: 'long':'GMT-4':'es-MX'}}</li>
+                <li>{{customDate | date: 'long':'GMT-4':'en-US'}}</li>
+                <li>{{customDate | date: 'long':'GMT-4':'fr-CA'}}</li>
+            </ul>
+            
+        </p-card>
+    </div>
 </div>

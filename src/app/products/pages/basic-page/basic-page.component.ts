@@ -9,4 +9,5 @@ export class BasicPageComponent {
   nameLower = 'yael santana';
   nameUpper = 'YAEL SANTANA';
   nameTitle = 'YaEl SanTANa';
+  customDate: Date = new Date();
 }
